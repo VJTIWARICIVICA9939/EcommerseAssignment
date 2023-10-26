@@ -1,18 +1,41 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+// import { StoreModule } from "./store/store.module";
+// import { StoreComponent } from "./store/store.component";
+// import { CheckoutComponent } from "./store/checkout.component";
+// import { CartDetailComponent } from "./store/cartDetail.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    // BrowserModule,
+    // StoreModule,
+    // RouterModule.forRoot([
+    //   {
+    //     path: "store",
+    //     component: StoreComponent,
+    //   },
+    //   {
+    //     path: "cart",
+    //     component: CartDetailComponent,
+    //   },
+    //   {
+    //     path: "checkout",
+    //     component: CheckoutComponent,
+    //   },
+
+    //   {
+    //     path: "admin",
+    //     loadChildren: () =>
+    //       import("./admin/admin.module").then((m) => m.AdminModule),
+    //   },
+
+    //   { path: "**", redirectTo: "/store" },
+    // ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
